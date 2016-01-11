@@ -1,0 +1,12 @@
+#! /bin/bash
+mkdir ../temp
+mkdir ../temp/source
+git checkout hexo
+cp * ../temp/ -r
+git checkout themes
+cp * ../temp/ -r
+git checkout posts
+cp *  ../temp/source
+cd ../temp
+hexo g
+
