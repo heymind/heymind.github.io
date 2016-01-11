@@ -2,11 +2,11 @@
 mkdir ../temp
 mkdir ../temp/source
 git checkout hexo
-cp * ../temp/ -r
+cp * ../temp/ -rf
 git checkout themes
-cp * ../temp/ -r
+cp * ../temp/ -rf
 git checkout posts
-cp *  ../temp/source
+cp *  ../temp/source -rf
 cd ../temp
 npm i
 hexo d
