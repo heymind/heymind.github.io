@@ -8,5 +8,6 @@ cp * ../temp/ -r
 git checkout posts
 cp *  ../temp/source
 cd ../temp
-hexo g
+npm i
+hexo d
 
