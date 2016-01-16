@@ -9,5 +9,5 @@ git checkout posts
 cp *  ../temp/source -rf
 cd ../temp
 npm i
-hexo d
+# hexo d
 
