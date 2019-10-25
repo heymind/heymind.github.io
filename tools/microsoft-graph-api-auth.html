@@ -114,7 +114,7 @@
                     <label for="refresh_token">Refresh Token</label>
                 </div>
                 <div class="input-field">
-                    <input placeholder="Placeholder" name="redirect_url" type="text">
+                    <input placeholder="Placeholder" name="redirect_uri" type="text">
                     <label for="redirect_uri">Redirect Uri</label>
                 </div>
             </div>
@@ -149,7 +149,7 @@
         window.onload = function () {
 
             syncField("client_id");
-            syncField("redirect_url", window.location);
+            syncField("redirect_uri", window.location);
             document.querySelector("#location").textContent = window.location;
 
 
