@@ -150,7 +150,7 @@
 
             syncField("client_id");
             syncField("redirect_uri", window.location);
-            document.querySelector("#location").textContent = window.location;
+            document.querySelector("#location").textContent = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
 
             const params = (new URL(document.location)).searchParams;
