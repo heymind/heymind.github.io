@@ -149,7 +149,7 @@
         window.onload = function () {
 
             syncField("client_id");
-            syncField("redirect_uri", window.location);
+            syncField("redirect_uri",  window.location.protocol + "//" + window.location.host + window.location.pathname);
             document.querySelector("#location").textContent = window.location.protocol + "//" + window.location.host + window.location.pathname;
 
 
